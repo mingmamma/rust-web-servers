@@ -6,3 +6,16 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+epoll = "4.3.3"
+
+[[bin]]
+name = "epoll-non-blocking"
+path = "src/epoll-non-blocking.rs"
+
+[[bin]]
+name = "eager-non-blocking"
+path = "src/eager-non-blocking.rs"
+
+[[bin]]
+name = "async-future"
+path = "src/async-future.rs"
